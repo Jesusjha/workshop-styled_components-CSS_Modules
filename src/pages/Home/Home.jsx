@@ -1,47 +1,31 @@
-import React from 'react';
-import { Main, Title, SubTitle, TextBody, TextLink } from '../../ui/index';
-
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import style from './Home.module.css'
 
 const Home = () => {
-	return (
-		<Main>
-			<Title>My first component</Title>
-			<SubTitle>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea
-				incidunt quia sequi ex deleniti voluptatem exercitationem quibusdam
-				maiores quod. Sapiente doloremque optio distinctio delectus,
-				voluptatibus fugit aliquid earum natus.
-			</SubTitle>
-			<TextBody>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eos
-				labore. Magni facere obcaecati impedit. Odio deleniti excepturi sed
-				adipisci, aliquam quisquam, praesentium, dignissimos placeat modi
-				perspiciatis repellendus quaerat vel iure. Facilis aspernatur illo, ab
-				eveniet in dolorem sed qui neque eum fugiat unde aperiam expedita
-				obcaecati labore veniam eaque quis culpa nobis ipsam maiores officia
-				error debitis laudantium corporis?
-			</TextBody>
-			<TextBody blueText>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eos
-				labore. Magni facere obcaecati impedit. Odio deleniti excepturi sed
-				adipisci, aliquam quisquam, praesentium, dignissimos placeat modi
-				perspiciatis repellendus quaerat vel iure. Facilis aspernatur illo, ab
-				eveniet in dolorem sed qui neque eum fugiat unde aperiam expedita
-				obcaecati labore veniam eaque quis culpa nobis ipsam maiores officia
-				error debitis laudantium corporis?
-			</TextBody>
-			<TextBody pinkText>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, eos
-				labore. Magni facere obcaecati impedit. Odio deleniti excepturi sed
-				adipisci, aliquam quisquam, praesentium, dignissimos placeat modi
-				perspiciatis repellendus quaerat vel iure. Facilis aspernatur illo, ab
-				eveniet in dolorem sed qui neque eum fugiat unde aperiam expedita
-				obcaecati labore veniam eaque quis culpa nobis ipsam maiores officia
-				error debitis laudantium corporis?
-			</TextBody>
-      <TextLink to='class'>Next page</TextLink>
-		</Main>
-	);
-};
 
-export default Home;
+  const navigate = useNavigate()
+
+  return (
+    <main>
+      <h2 className={style.title}>My first styles components</h2>
+      <h4 className={style.textBody}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestiae, cum rerum, natus deserunt laborum illum voluptas aut dolor iste tenetur hic praesentium maiores voluptatum molestias eius minus et fugit?
+      </h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores accusantium quibusdam alias architecto fugiat rerum inventore dicta itaque laborum perferendis. Veritatis officia, sed nobis ipsa provident dolores? Quibusdam animi nesciunt praesentium pariatur ex a cum. Odio quibusdam cumque sapiente atque? Nihil corporis dolor nobis? Doloremque facilis ad voluptas, beatae, voluptatem itaque aliquam, consequuntur exercitationem cumque quod repudiandae nisi atque? Omnis blanditiis quibusdam expedita id accusantium.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores accusantium quibusdam alias architecto fugiat rerum inventore dicta itaque laborum perferendis. Veritatis officia, sed nobis ipsa provident dolores? Quibusdam animi nesciunt praesentium pariatur ex a cum. Odio quibusdam cumque sapiente atque? Nihil corporis dolor nobis? Doloremque facilis ad voluptas, beatae, voluptatem itaque aliquam, consequuntur exercitationem cumque quod repudiandae nisi atque? Omnis blanditiis quibusdam expedita id accusantium.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores accusantium quibusdam alias architecto fugiat rerum inventore dicta itaque laborum perferendis. Veritatis officia, sed nobis ipsa provident dolores? Quibusdam animi nesciunt praesentium pariatur ex a cum. Odio quibusdam cumque sapiente atque? Nihil corporis dolor nobis? Doloremque facilis ad voluptas, beatae, voluptatem itaque aliquam, consequuntur exercitationem cumque quod repudiandae nisi atque? Omnis blanditiis quibusdam expedita id accusantium.
+      </p>
+      <article>
+        <button onClick={() => navigate('/class')}>Next page</button>
+      </article>
+    </main>
+  )
+}
+
+export default Home
