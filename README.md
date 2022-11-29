@@ -12,6 +12,8 @@ npm install
 
 Styled-components and React Router will be installed
 
+## In css-modules branch is the example of the Workshop 
+
 ## Developing
 
 ### Technologies / Built With
